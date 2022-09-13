@@ -1,0 +1,8 @@
+boards:
+  - name: raytac_mdbt50q_rx_green
+    full_name: Raytac MDBT50Q-RX Green
+    vendor: raytac
+    socs:
+      - name: nrf52833
+        variants:
+          - name: zmk

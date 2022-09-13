@@ -1,0 +1,15 @@
+boards:
+  - name: slicemk_ergodox_202205_green_left
+    full_name: SliceMK ErgoDox 202205 Green Left
+    vendor: slicemk
+    socs:
+      - name: nrf52833
+        variants:
+          - name: zmk
+  - name: slicemk_ergodox_202205_green_right
+    full_name: SliceMK ErgoDox 202205 Green Right
+    vendor: slicemk
+    socs:
+      - name: nrf52833
+        variants:
+          - name: zmk

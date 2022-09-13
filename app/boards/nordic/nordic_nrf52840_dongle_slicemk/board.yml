@@ -1,0 +1,8 @@
+boards:
+  - name: nordic_nrf52840_dongle_slicemk
+    full_name: Nordic nRF52840 Dongle SliceMK
+    vendor: nordic
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk

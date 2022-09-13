@@ -1,0 +1,8 @@
+boards:
+  - name: slicemk_1551usb3_ms88sfa_blue
+    full_name: SliceMK 1551USB3 MS88SFA Blue
+    vendor: slicemk
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk

@@ -1,0 +1,8 @@
+boards:
+  - name: slicemk_ergodox_202104
+    full_name: SliceMK ErgoDox 202104
+    vendor: slicemk
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk

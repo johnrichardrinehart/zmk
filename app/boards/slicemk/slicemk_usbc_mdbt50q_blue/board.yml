@@ -1,0 +1,8 @@
+boards:
+  - name: slicemk_usbc_mdbt50q_blue
+    full_name: SliceMK USBC MDBT50Q Blue
+    vendor: slicemk
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk
