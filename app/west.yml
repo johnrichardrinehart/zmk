@@ -10,30 +10,30 @@ manifest:
       revision: v4.1.0+zmk-fixes
       clone-depth: 1
       import:
-        name-blocklist:
-          - ci-tools
-          - hal_altera
-          - hal_cypress
-          - hal_infineon
-          - hal_microchip
-          - hal_nxp
-          - hal_openisa
-          - hal_xtensa
-          - hal_st
-          - hal_ti
-          - loramac-node
-          - mcuboot
-          - mcumgr
-          - net-tools
-          - openthread
-          - edtt
-          - trusted-firmware-m
-    - name: hal_stm32
-      revision: 4fcc3a3f32abe1c4cb76d9d1cef967728dd03908
-      path: modules/hal/stm32
-      remote: zmkfirmware
-      groups:
-        - hal
+        name-allowlist:
+          # Zephyr modules for building firmware
+          - cmsis
+          - hal_nordic
+          - hal_rpi_pico
+          - mbedtls
+          - nanopb
+          - segger
+          - tinycrypt
+          - zcbor
+          # Babblesim modules for testing
+          - bsim
+          - babblesim_base
+          - babblesim_ext_2G4_libPhyComv1
+          - babblesim_ext_2G4_phy_v1
+          - babblesim_ext_2G4_channel_NtNcable
+          - babblesim_ext_2G4_channel_multiatt
+          - babblesim_ext_2G4_modem_magic
+          - babblesim_ext_2G4_modem_BLE_simple
+          - babblesim_ext_2G4_device_burst_interferer
+          - babblesim_ext_2G4_device_WLAN_actmod
+          - babblesim_ext_2G4_device_playback
+          - babblesim_ext_libCryptov1
+          - nrf_hw_models
     - name: lvgl
       revision: f1db87ee98f1810328a8419572fa42a3b5f352ae
       path: modules/lib/gui/lvgl
