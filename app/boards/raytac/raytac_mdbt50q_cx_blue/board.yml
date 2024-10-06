@@ -1,0 +1,8 @@
+boards:
+  - name: raytac_mdbt50q_cx_blue
+    full_name: Raytac MDBT50Q-CX Blue
+    vendor: raytac
+    socs:
+      - name: nrf52840
+        variants:
+          - name: zmk
