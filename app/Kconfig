@@ -205,6 +205,9 @@ config BT_SMP_ALLOW_UNAUTH_OVERWRITE
 config BT_CTLR_PHY_2M
     default n if ZMK_BLE_EXPERIMENTAL_CONN
 
+config BT_CTLR_ASSERT_OVERHEAD_START
+    default n
+
 config ZMK_BLE_THREAD_STACK_SIZE
     int "BLE notify thread stack size"
     default 768
