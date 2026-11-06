@@ -26,6 +26,10 @@ int zmk_ble_prof_select(uint8_t index);
 void zmk_ble_clear_all_bonds(void);
 int zmk_ble_prof_disconnect(uint8_t index);
 
+/* Host-only runtime policy; enabled on reboot. Split peripheral links are unaffected. */
+bool zmk_ble_host_is_enabled(void);
+int zmk_ble_host_set_enabled(bool enabled);
+
 int zmk_ble_active_profile_index(void);
 int zmk_ble_profile_index(const bt_addr_le_t *addr);
 bt_addr_le_t *zmk_ble_profile_address(uint8_t index);

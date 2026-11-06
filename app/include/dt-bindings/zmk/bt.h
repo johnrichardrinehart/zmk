@@ -10,6 +10,9 @@
 #define BT_SEL_CMD 3
 #define BT_CLR_ALL_CMD 4
 #define BT_DISC_CMD 5
+#define BT_HOST_OFF_CMD 6
+#define BT_HOST_ON_CMD 7
+#define BT_HOST_TOG_CMD 8
 
 /*
 Note: Some future commands will include additional parameters, so we
@@ -22,3 +25,6 @@ defines these aliases up front.
 #define BT_SEL BT_SEL_CMD
 #define BT_CLR_ALL BT_CLR_ALL_CMD 0
 #define BT_DISC BT_DISC_CMD
+#define BT_HOST_OFF BT_HOST_OFF_CMD 0
+#define BT_HOST_ON BT_HOST_ON_CMD 0
+#define BT_HOST_TOG BT_HOST_TOG_CMD 0
