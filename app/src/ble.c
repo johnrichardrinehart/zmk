@@ -848,7 +848,7 @@ static int zmk_ble_complete_startup(void) {
 
 #if IS_ENABLED(CONFIG_ZMK_BLE_KEYBOARD_NAME_MAC)
     bt_addr_le_t addrs[CONFIG_BT_ID_MAX];
-    size_t id_count;
+    size_t id_count = ARRAY_SIZE(addrs);
     bt_id_get(addrs, &id_count);
     if (id_count < 1) {
         LOG_ERR("Failed to get Bluetooth device address");
